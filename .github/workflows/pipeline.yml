@@ -173,6 +173,7 @@ jobs:
           cf auth
           cf target -o "$CF_ORG" -s "$CF_SPACE"
           sudo chmod +x gradlew && ./gradlew cfMigrate
+          sudo chmod +x gradlew && ./gradlew testMigrate
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
           CF_ORG: ${{ secrets.CF_ORG }}
