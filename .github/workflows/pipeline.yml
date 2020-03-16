@@ -28,7 +28,13 @@ jobs:
 
           java-version: 11
 
-      
+      - name: Create test database
+
+        run: |
+
+
+
+          sudo chmod +x gradlew && ./gradlew testMigrate
 
       - name: Build with Gradle
 
