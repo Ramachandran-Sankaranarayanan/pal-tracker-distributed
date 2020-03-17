@@ -8,6 +8,7 @@ import org.springframework.web.client.RestOperations;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+
 public class ProjectClient {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
